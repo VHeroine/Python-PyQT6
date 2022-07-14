@@ -65,6 +65,7 @@ class MainGUI(QMainWindow):
         self.file_list = [directory + '/' + f for f in os.listdir(directory) if f.endswith(".jpg") or
         f.endswith(".jpeg") or f.endswith(".png") or f.endswith(".bmp")]
         self.file_counter = 0
+        self.current_file = self.file_list[self.file_counter]
         self.scale_image()
 
 
